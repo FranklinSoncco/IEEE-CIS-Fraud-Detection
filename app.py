@@ -7,12 +7,6 @@ Requiere haber corrido model.py primero.
 """
 
 import sys
-import subprocess
-subprocess.run([sys.executable, "-m", "pip", "install",
-                "streamlit", "xgboost", "lightgbm", "scikit-learn",
-                "pandas", "numpy", "matplotlib", "seaborn",
-                "joblib", "scipy", "plotly"], capture_output=True)
-
 import os
 import json
 import warnings
