@@ -1,0 +1,115 @@
+[
+  {
+    "window": "Sin Drift (Control)",
+    "timestamp": "2026-05-05T20:08:01.012269",
+    "n_samples": 5000,
+    "drift_signals": 0,
+    "retrain_recommended": false,
+    "data_drift": {
+      "psi_score": 0.0009,
+      "psi_drifted": false,
+      "ks_statistic": 0.0104,
+      "ks_pvalue": 0.6723,
+      "ks_drifted": false,
+      "drift_detected": false
+    },
+    "prediction_drift": {
+      "baseline_fraud_rate": 0.0373,
+      "new_fraud_rate": 0.0366,
+      "absolute_change": 0.0007,
+      "drift_detected": false
+    },
+    "confidence_alerts": {
+      "threshold": 0.65,
+      "low_confidence_rate": 0.0342,
+      "baseline_rate": 0.037,
+      "increase_factor": 0.92,
+      "drift_detected": false
+    }
+  },
+  {
+    "window": "Drift Gradual (moderado)",
+    "timestamp": "2026-05-05T20:08:02.028527",
+    "n_samples": 5000,
+    "drift_signals": 1,
+    "retrain_recommended": false,
+    "data_drift": {
+      "psi_score": 0.0497,
+      "psi_drifted": false,
+      "ks_statistic": 0.2117,
+      "ks_pvalue": 0.0,
+      "ks_drifted": true,
+      "drift_detected": true
+    },
+    "prediction_drift": {
+      "baseline_fraud_rate": 0.0373,
+      "new_fraud_rate": 0.039,
+      "absolute_change": 0.0017,
+      "drift_detected": false
+    },
+    "confidence_alerts": {
+      "threshold": 0.65,
+      "low_confidence_rate": 0.0404,
+      "baseline_rate": 0.037,
+      "increase_factor": 1.09,
+      "drift_detected": false
+    }
+  },
+  {
+    "window": "Drift Repentino (severo)",
+    "timestamp": "2026-05-05T20:08:02.924041",
+    "n_samples": 5000,
+    "drift_signals": 3,
+    "retrain_recommended": true,
+    "data_drift": {
+      "psi_score": 0.307,
+      "psi_drifted": true,
+      "ks_statistic": 0.0104,
+      "ks_pvalue": 0.6723,
+      "ks_drifted": false,
+      "drift_detected": true
+    },
+    "prediction_drift": {
+      "baseline_fraud_rate": 0.0373,
+      "new_fraud_rate": 0.1214,
+      "absolute_change": 0.0841,
+      "drift_detected": true
+    },
+    "confidence_alerts": {
+      "threshold": 0.65,
+      "low_confidence_rate": 0.1654,
+      "baseline_rate": 0.037,
+      "increase_factor": 4.47,
+      "drift_detected": true
+    },
+    "auc_impact_risk": "high"
+  },
+  {
+    "window": "Drift Estacional",
+    "timestamp": "2026-05-05T20:08:03.893289",
+    "n_samples": 5000,
+    "drift_signals": 1,
+    "retrain_recommended": false,
+    "data_drift": {
+      "psi_score": 0.0009,
+      "psi_drifted": false,
+      "ks_statistic": 0.0646,
+      "ks_pvalue": 0.0,
+      "ks_drifted": true,
+      "drift_detected": true
+    },
+    "prediction_drift": {
+      "baseline_fraud_rate": 0.0373,
+      "new_fraud_rate": 0.0366,
+      "absolute_change": 0.0007,
+      "drift_detected": false
+    },
+    "confidence_alerts": {
+      "threshold": 0.65,
+      "low_confidence_rate": 0.0342,
+      "baseline_rate": 0.037,
+      "increase_factor": 0.92,
+      "drift_detected": false
+    }
+  }
+]
