@@ -1,0 +1,9 @@
+{
+  "day_min": 1,
+  "day_max": 182,
+  "cut_train": 127,
+  "cut_val": 154,
+  "n_train": 437511,
+  "n_val": 74487,
+  "n_test": 78542
+}
